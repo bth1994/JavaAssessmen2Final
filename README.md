@@ -12,6 +12,28 @@ Follow these steps to submit.
 * Merge part 6 into this branch
 * Merge part 7 into this branch
 
+Each time you merge you may have a conflict with ProjectTestSuite file since you may have modified that file to run the tests. If this is the case, you can resolve these conflicts by editting the file to look like this
+
+```
+package com.zipcodewilmington.assessment2;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+
+/**
+ * Created by leon on 3/1/18.
+ * The purpose of this class is to test all methods in this project
+ */
+@RunWith(Suite.class)
+
+@Suite.SuiteClasses({
+})
+public class ProjectTestSuite {
+}
+```
+
+Each time you get this merge conflict, simply copy and paste the contents above into the ProjectTestSuite file
+
 Once you have done that, push your submission branch to your repository
 
 From there, make a pull request from your repository/submission branch to Zipcoder/submission
