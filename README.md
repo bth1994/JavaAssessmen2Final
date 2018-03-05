@@ -1,22 +1,50 @@
-# ZipCodeWilmington Cohort 4.0 Java Assessment 2 
+# Java Assessment 2 
 
-* Complete each of the asks in each of the README.md files found in the [instructions directory](./instructions)
-    * Begin by completing section 1.
-        * [WuTangConcatenator](./src/main/java/com/zipcodewilmington/assessment2/part1/README.md)
-        
-    * Continue by completing section 2.
-        * [RockPaperScissorsEvaluator](./src/main/java/com/zipcodewilmington/assessment2/part2/README.md)
-        
-    * Advance further by completing section 3.
-        * [ArrayUtility](./src/main/java/com/zipcodewilmington/assessment2/part3/README.md)
+This test is broken up into 7 sections. Each section is seperated into its individual branch.
 
-    * Go on to section 4.
-        * [TO-BE-CREATED](./instructions/part4/README-JumpToTheFlag.md)
 
-    * Finish by completing section 5.
-        * [TO-BE-CREATED](./instructions/part5/README-Palindrome.md)
+| Branch Name | Branch Topic |
+| ----------- | ------------ |
+| **master**      |            |
+| **part1**       |   WuTangConcatenator           |
+| **part2**       |   ArrayUtility           |
+| **part3**       |   Rock Paper Scissors Enum Evaluation           |
+| **part4**       |   Java Interfaces           |
+| **part5**       |   Election Problem           |
+| **part6**       |   The Love-Letter Mystery            |
+| **part7**       |   Find the Winner!           |
+
+
+To begin working on a branch you must check the branch out.
+For example to start **part1** 
+
+```
+git checkout part1
+
+```
+
+Once you switch to the branch you will see the README.md file in the source folder, and unit test in the test folder.
+
+**PLEASE DO NOT FORGET TO READ THE README**
+
+* Once you are finished a branch you must MERGE the branch into master!
+* To merge into master you must commit and checkin your changes, then switch to master
+
+```
+// If you are currently working on branch 'part1' this is how you would merge
+// to master
+git add .
+git commit -m "Finished working on part1"
+git checkout master
+git merge part1
+```
+
+* Any branch that has NOT been merged to master, will **NOT BE GRADED PERIOD!**
 
 * **Frequently Asked Questions**
    * May I use my notes & the interwebz?
       * Yes, please.
-# JavaAssessmen2Final
+  * Do I have to complete the test to pass?
+      * No, work on the test IN ORDER, and complete as much as you can before 4pm
+  * Am I allowed to take a break?
+     * Yes, take as many breaks as you like. However do not talk about the test.	  	
