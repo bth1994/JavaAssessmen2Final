@@ -1,22 +1,22 @@
-# ZipCodeWilmington Cohort 4.0 Java Assessment 2 
+# Java Assessment 2 - Submission Branch
 
-* Complete each of the asks in each of the README.md files found in the [instructions directory](./instructions)
-    * Begin by completing section 1.
-        * [WuTangConcatenator](./src/main/java/com/zipcodewilmington/assessment2/part1/README.md)
-        
-    * Continue by completing section 2.
-        * [RockPaperScissorsEvaluator](./src/main/java/com/zipcodewilmington/assessment2/part2/README.md)
-        
-    * Advance further by completing section 3.
-        * [ArrayUtility](./src/main/java/com/zipcodewilmington/assessment2/part3/README.md)
+This is the branch you will submit your project into! 
 
-    * Go on to section 4.
-        * [TO-BE-CREATED](./instructions/part4/README-JumpToTheFlag.md)
+Follow these steps to submit. 
 
-    * Finish by completing section 5.
-        * [TO-BE-CREATED](./instructions/part5/README-Palindrome.md)
+* Merge part 1 into this branch
+* Merge part 2 into this branch
+* Merge part 3 into this branch
+* Merge part 4 into this branch
+* Merge part 5 into this branch
+* Merge part 6 into this branch
+* Merge part 7 into this branch
 
-* **Frequently Asked Questions**
-   * May I use my notes & the interwebz?
-      * Yes, please.
-# JavaAssessmen2Final
+Once you have done that, push your submission branch to your repository
+
+From there, make a pull request from your repository/submission branch to Zipcoder/submission
+
+The travis build should start up and your tests will run. 
+
+#### Note: 
+While part 2 was not required, it will still run. If you were able to get any of that part running, it will benefit you but any failed tests will not affect your overall grade. as a result you may see a red x even though you may still get a perfect score.
