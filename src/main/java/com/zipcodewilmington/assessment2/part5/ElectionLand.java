@@ -34,9 +34,4 @@ public class ElectionLand {
         return count;
     }
 
-    public static void main(String[] args) {
-        ElectionLand el = new ElectionLand();
-        String[] votes = {"Alex","Michael","Harry","Dave","Michael","Victor","Harry","Alex","Mary","Mary", "Mary"};
-        el.electionWinner(votes);
-    }
 }
