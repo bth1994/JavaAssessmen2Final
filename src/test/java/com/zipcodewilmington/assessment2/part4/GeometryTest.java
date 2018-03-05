@@ -53,6 +53,7 @@ public class GeometryTest {
         Assert.assertEquals("The Circle area should be 1384.74", expected, actual, 0.001);
     }
 
+    /*
     @Test
     public void implementedInterfaces(){
         Geometry g = new Geometry();
@@ -79,5 +80,6 @@ public class GeometryTest {
         });
         return arr;
     }
+    */
 
 }
