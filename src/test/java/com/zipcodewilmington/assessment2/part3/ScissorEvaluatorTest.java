@@ -27,3 +27,4 @@ public class ScissorEvaluatorTest implements EvaluatorTestInterface{
         Assert.assertEquals(expected, actual);
     }
 }
+

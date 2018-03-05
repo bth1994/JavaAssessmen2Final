@@ -27,3 +27,4 @@ public class RockEvaluatorTest implements EvaluatorTestInterface {
         Assert.assertEquals(expected, actual);
     }
 }
+

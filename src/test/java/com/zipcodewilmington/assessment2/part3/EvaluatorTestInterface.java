@@ -11,4 +11,6 @@ public interface EvaluatorTestInterface {
 
     @Test
     void evaluateLoserTest();
+
 }
+

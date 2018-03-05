@@ -27,3 +27,4 @@ public class PaperEvaluatorTest implements EvaluatorTestInterface {
         Assert.assertEquals(expected, actual);
     }
 }
+
