@@ -23,8 +23,4 @@ public class UnitTestingUtils {
 
         Assert.assertArrayEquals(expected, actual);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> part3
