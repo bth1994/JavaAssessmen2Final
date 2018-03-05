@@ -1,41 +1,27 @@
 package com.zipcodewilmington.assessment2.part5;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class ElectionLand {
 
     public String electionWinner(String[] votes) {
-        String[] winner = new String[1];
-        String[] previous = new String[1];
-
+        TreeMap<String, Integer> voteMap = new TreeMap<>();
         for(String name : votes) {
-            int highest = 0;
+            voteMap.put(name, countVotes(votes, name));
+        }
 
-            int current = countVotes(votes, name);
+        ArrayList<String> names = new ArrayList<>();
+        int maxValue = Collections.max(voteMap.values());
 
-            if(current > highest) {
-                highest = current;
-                winner[0] = name;
-                previous[0] = name;
-            } else if (current == highest) {
-                winner[0] = decisionIfTie(votes, winner[0], previous[0]);
-                previous[0] = decisionIfTie(votes, winner[0], previous[0]);
-
+        for(Map.Entry<String, Integer> entry : voteMap.entrySet()) {
+            if(entry.getValue() == maxValue) {
+                names.add(entry.getKey());
             }
         }
-        return winner[0];
-    }
 
-    public String decisionIfTie(String[] votes, String name1, String name2) {
-        Arrays.sort(votes);
-        ArrayList<String> voteAsArrayList = new ArrayList<>(Arrays.asList(votes));
-        if(voteAsArrayList.indexOf(name1) > voteAsArrayList.indexOf(name2)) {
-            return name1;
-        }
-        return name2;
+        Collections.sort(names);
+        return names.get(names.size() - 1);
+
     }
 
     public Integer countVotes(String[] votes, String name) {
@@ -50,7 +36,7 @@ public class ElectionLand {
 
     public static void main(String[] args) {
         ElectionLand el = new ElectionLand();
-        String[] votes = {"Alex","Michael","Harry","Dave","Michael","Victor","Harry","Alex","Mary","Mary"};
-        System.out.println(el.countVotes(votes, "Michael"));
+        String[] votes = {"Alex","Michael","Harry","Dave","Michael","Victor","Harry","Alex","Mary","Mary", "Mary"};
+        el.electionWinner(votes);
     }
 }
